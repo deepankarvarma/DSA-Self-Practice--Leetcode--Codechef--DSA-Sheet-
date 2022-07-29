@@ -1,38 +1,48 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
-#define int long long int
 
-main(){
+struct Edge {
+    int src, dest;
+};
 
-    int t, n;
-    cin >> t;
-    while (t--)
+class Graph
+{
+public:
+   
+    vector<vector<int>> adjList;
+  Graph(vector<Edge> const &edges, int n)
     {
-        cin >> n;
-        map<int, int> p;
-        for (int i = 0; i < n; i++)
+      
+        adjList.resize(n);
+ 
+        for (auto &edge: edges)
         {
-            int a;
-            cin >> a;
-            int d;
-            for (int i = 0; i <= 31; i++)
-            {
-                int c = (1 << i);
-                if (c & a)
-                {
-                    d = i;
-                }
-            }
-            p[d]++;
-        }
-        int ans = 0;
-        for (auto x : p)
-        {
-            int d = x.second;
-            ans += ((d - 1) * d) / 2;
-        }
-        cout << ans << endl;
-    }
-    return 0;
 
+            adjList[edge.src].push_back(edge.dest);
+        }
+    }
+};
+
+
+int main()
+{
+    vector<Edge> edges;
+    int n ;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            Edge e;
+            e.src=j;
+            e.dest=i;
+           if(i>j && (i+1)%(j+1)==0){ 
+            
+            edges.push_back(e);
+            }
+        }
+    }
+    Graph graph(edges, n);
+    
+ 
+    return 0;
 }
