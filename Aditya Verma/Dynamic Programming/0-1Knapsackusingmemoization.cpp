@@ -1,3 +1,4 @@
+//Memoization is a top down approach.
 //Memoization is a part of DP and a extension of recusion just by including storage 
 //and 2 lines of code. It basically makes a recursive call iff the value is -1, in
 //the matrix. Disadvantage -> It can congest the stack due to multiple function calls 
