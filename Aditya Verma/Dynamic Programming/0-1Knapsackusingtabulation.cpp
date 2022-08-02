@@ -26,6 +26,6 @@ int main(){
             t[i][j]=t[i-1][j];
         }
     }
-    cout<<t[n][W];
+    cout<<t[n][W];// the answer is stored in the bottom right cell of the matrix
     return 0;
 }
