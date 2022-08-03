@@ -3,8 +3,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int arr[]={3,3,3,3};
-    int X=6;
+    int arr[]={0,0,0,3};
+    int X=3;
     int n=sizeof(arr)/sizeof(arr[0]);
     int subset[n+1][X+1];
     for(int i=0;i<n+1;i++){
