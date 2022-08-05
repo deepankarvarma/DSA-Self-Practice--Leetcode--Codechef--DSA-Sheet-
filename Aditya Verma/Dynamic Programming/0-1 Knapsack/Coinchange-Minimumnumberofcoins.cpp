@@ -1,4 +1,6 @@
 // Very important question refer to video for explanation
+// INT_MAX-1 is used because when we will add 1 to that in line 26 it will become INT_MAX
+// but if we would have taken INT_MAX , INT_MAX+1 will turn out to be a negative question
 #include <bits/stdc++.h>
 using namespace std;
 
