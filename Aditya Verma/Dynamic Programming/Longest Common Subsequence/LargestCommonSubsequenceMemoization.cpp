@@ -15,8 +15,8 @@ int LCSMemoize(string x,string y ,int n,int m){
 }
 int main(){
     memset(t,-1,sizeof(t));
-    string x="ylqpejqbalahwr";
-    string y="yrkzavgdmdgtqpg";
+    string x="abc";
+    string y="pqr";
     cout<<LCSMemoize(x,y,x.length(),y.length());
     return 0;
 }

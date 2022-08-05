@@ -25,8 +25,8 @@ int LCS(string x,string y, int n,int m){
     }
 }
 int main(){
-    string x="ylqpejqbalahwr";
-    string y="yrkzavgdmdgtqpg";
+    string x="abc";
+    string y="pqr";
     int n=x.length();
     int m=y.length();
     cout<<LCS(x,y,n,m);
