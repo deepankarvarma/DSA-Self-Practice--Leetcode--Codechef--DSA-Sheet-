@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     string x="pqr";
-    string y="abc";
+    string y="abcpq";
     int n=x.length();
     int m=y.length();
     int t[n+1][m+1];
