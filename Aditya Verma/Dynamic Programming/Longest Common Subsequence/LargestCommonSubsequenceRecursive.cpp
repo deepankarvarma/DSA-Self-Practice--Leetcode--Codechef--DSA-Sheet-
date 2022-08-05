@@ -16,7 +16,7 @@ int LCS(string x,string y, int n,int m){
     // Base condition check
     if(n==0 || m==0)
     return 0;
-    if(x[n]==y[m]){
+    if(x[n-1]==y[m-1]){
         return 1+LCS(x,y,n-1,m-1);
         // is the string is chosen then return with size reduced
     }
@@ -25,8 +25,9 @@ int LCS(string x,string y, int n,int m){
     }
 }
 int main(){
-    string x="AGGTAB";
-    string y="GXTXAYB";
-    cout<<LCS(x,y,x.length(),y.length());
-    return 0;
+    string x="ylqpejqbalahwr";
+    string y="yrkzavgdmdgtqpg";
+    int n=x.length();
+    int m=y.length();
+    cout<<LCS(x,y,n,m);
 }
