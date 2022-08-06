@@ -1,4 +1,5 @@
 // Same as longest common subsequence but we have to minus the length of the lcs from m+n
+// Supersequence is a string that contains both the strings as a subsequence
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
