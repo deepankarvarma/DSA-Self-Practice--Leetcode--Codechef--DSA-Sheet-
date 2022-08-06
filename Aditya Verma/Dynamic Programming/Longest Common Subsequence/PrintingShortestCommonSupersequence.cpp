@@ -32,7 +32,7 @@ string shortestCommonSupersequence(string x, string y) {
                 j--;
             }
             else{
-                if(dp[i][j-1]>=dp[i-1][j]){
+                if(dp[i][j-1]>dp[i-1][j]){
                     ans.push_back(y[j-1]);
                     j--;
                 }
