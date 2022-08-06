@@ -3,8 +3,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string x="aqd";
-    string y="wafsefssgpqd";
+    string x="eabcb";
+    string y="bcbae";
     int maxlength=0;
     int n=x.length();
     int m=y.length();
@@ -35,7 +35,7 @@ int main(){
             j--;
         }
         else{
-            if(t[i][j-1]>t[i-1][j])
+            if(t[i][j-1]>=t[i-1][j])
                 j--;
             else
                 i--;

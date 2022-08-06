@@ -26,7 +26,7 @@ string lcsprint(string x,string y,int m,int n){
             j--;
         }
         else{
-            if(t[i][j-1]>t[i-1][j])
+            if(t[i][j-1]>=t[i-1][j])
                 j--;
             else
                 i--;
