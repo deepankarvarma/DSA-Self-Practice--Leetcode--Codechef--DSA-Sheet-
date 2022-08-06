@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 string shortestCommonSupersequence(string x, string y) {
         int m=x.length();
         int n=y.length();
@@ -49,4 +52,10 @@ string shortestCommonSupersequence(string x, string y) {
         }
         reverse(ans.begin(),ans.end());
         return ans;
+    }
+    int main(){
+    string x="aaaa";
+    string y="aa";
+    cout<<shortestCommonSupersequence(x,y);
+    return 0;
     }
