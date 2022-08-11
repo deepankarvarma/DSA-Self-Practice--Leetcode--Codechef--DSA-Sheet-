@@ -9,6 +9,7 @@ public:
             prod*=m;
             sum+=m;
         }
+        
         return prod-sum;
     }
 };
