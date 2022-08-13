@@ -22,7 +22,7 @@ int firstoccurence(int arr[],int n,int val){
     return first;
 }
 int lastoccurence(int arr[],int n,int val){
-     int start=0;
+    int start=0;
     int end=n-1;
     int last=-1;
     while(start<=end){
@@ -40,10 +40,14 @@ int lastoccurence(int arr[],int n,int val){
     return last;
 }
 int main(){
-    int arr[]={2,8,12,0,14,15};
+    int arr[]={2,8,10,14,15};
     int n=sizeof(arr)/sizeof(arr[0]);
     int val=10;
-    
+    int firstidx=firstoccurence(arr,n,val);
+    int lastidx=lastoccurence(arr,n,val);
+    if(firstidx!=-1)
     cout<<lastoccurence(arr,n,val)-firstoccurence(arr,n,val)+1;
+    else
+    cout<<0;
     return 0;
 }
