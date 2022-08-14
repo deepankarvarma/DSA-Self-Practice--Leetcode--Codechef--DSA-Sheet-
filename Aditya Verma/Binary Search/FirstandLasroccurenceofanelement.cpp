@@ -40,9 +40,9 @@ int lastoccurence(int arr[],int n,int val){
     return last;
 }
 int main(){
-    int arr[]={2,8,10,10,10,12,14,15};
+    int arr[]={1,100,100};
     int n=sizeof(arr)/sizeof(arr[0]);
-    int val=10;
+    int val=100;
     cout<<"First occurence "<<firstoccurence(arr,n,val)<<" "<<"Last occurence "<<lastoccurence(arr,n,val);
     return 0;
 }
