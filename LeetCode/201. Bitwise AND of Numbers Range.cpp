@@ -22,7 +22,7 @@ public:
             return 0;
         else{
             
-            while(setBitNumber(left)==setBitNumber(right) && setBitNumber(left)>0){
+            while(setBitNumber(left)==setBitNumber(rigxht) && setBitNumber(left)>0){
                 res+=pow(2,setBitNumber(left));
                 left=left-pow(2,setBitNumber(left));
                 right=right-pow(2,setBitNumber(right));
