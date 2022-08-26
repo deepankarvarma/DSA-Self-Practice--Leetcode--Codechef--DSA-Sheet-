@@ -1,0 +1,1 @@
+// In DFS the 1 adjacent node is traversed till the end ,not all at a time.
