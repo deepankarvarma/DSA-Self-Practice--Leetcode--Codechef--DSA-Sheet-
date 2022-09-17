@@ -1,4 +1,4 @@
-// We don't know whether the graph has only 1 component or more than that ,
+// We don't know whether the graph has only 1 component or more than that .
 // component means a disconnected graph 
 // So to reduce this problem, we traverse from every node and check whether it is 
 // visited or not .If it is not visited then we apply BFS algorithm on that and mark it as visited.
