@@ -17,14 +17,14 @@ int main(){
     for(int i:s)
     cout<<i<<endl;
     cout<<endl;
-    set<int>::iterator it=s.begin();
-    it++;
-    s.erase(it);
-    for(int i:s)
-    cout<<i<<endl;
-    // cout<<s.begin()<<endl; This does not works
-    cout<<endl;
-    cout<<s.count(5)<<endl;
-    cout<<s.count(3)<<endl;  //check whether 5 is present in the set or not
+    // set<int>::iterator it=s.begin();
+    // it++;
+    // s.erase(it);
+    // for(int i:s)
+    // cout<<i<<endl;
+    // // cout<<s.begin()<<endl; This does not works
+    // cout<<endl;
+    // cout<<s.count(5)<<endl;
+    // cout<<s.count(3)<<endl;  //check whether 5 is present in the set or not
     return 0;
 }

@@ -7,7 +7,7 @@ int main(){
     m[1]="love";
     m[13]="deeps";
     m[2]="babbar";
-    m.insert({5,"bheem"});
+    // m.insert({5,"bheem"});
     for(auto i:m){
         cout<<i.first<<" "<<i.second<<endl;
     }
